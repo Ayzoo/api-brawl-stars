@@ -27,7 +27,7 @@ The Brawl Star API is a RESTful API based on the supercell video game Brawl Star
 
 Asegúrate de haber iniciado el servidor antes de realizar cualquier solicitud a la API. La API estará disponible en `http://localhost:3000`.
 
-Errores
+## Errores
 La API puede devolver los siguientes códigos de estado y mensajes de error:
 
 400 Bad Request: La solicitud es inválida.
@@ -37,8 +37,8 @@ La API puede devolver los siguientes códigos de estado y mensajes de error:
 Contribución
 Si deseas contribuir a esta API, siéntete libre de enviar solicitudes de extracción o informar problemas en el repositorio de GitHub: https://github.com/itsbeensolong/api-brawl-stars
 
-Licencia
+## Licencia
 Este proyecto está licenciado bajo la Licencia MIT.
 
-Contacto
+## Contacto
 Para consultas o más información, puedes comunicarte conmigo en johancs.mm@gmail.com
