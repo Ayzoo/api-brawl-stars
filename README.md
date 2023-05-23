@@ -11,9 +11,9 @@
 ## Instalación
 
 1. Clona este repositorio: `git clone https://github.com/itsbeensolong/api-brawl-stars.git`
-2. Navega hasta el directorio del proyecto: `cd api-ejemplo`
+2. Navega hasta el directorio del proyecto: `cd api-brawl-star`
 4. Configura las variables de entorno en el archivo `.env` según tus necesidades.
-5. Inicia el servidor: `npm start`
+5. Inicia el servidor: `go run .`
 
 ## Uso
 
