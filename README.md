@@ -24,7 +24,7 @@ The Brawl Star API is a RESTful API based on the supercell video game Brawl Star
 
 ## Use
 
-Make sure you have started the server before making any requests to the API. The API will be available in 'http://localhost:3000'.
+Make sure you have started the server before making any requests to the API. The API will be available in 'http://localhost:8080'.
 
 ## Errors
 The API may return the following status codes and error messages:
