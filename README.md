@@ -31,10 +31,14 @@ Asegúrate de haber iniciado el servidor antes de realizar cualquier solicitud a
 La API puede devolver los siguientes códigos de estado y mensajes de error:
 
 400 Bad Request: La solicitud es inválida.
+<br>
 401 Unauthorized: No se proporcionó o es inválido el token de acceso.
+<br>
 404 Not Found: No se encontró el recurso solicitado.
+<br>
 500 Internal Server Error: Error interno del servidor.
-Contribución
+
+## Contribución
 Si deseas contribuir a esta API, siéntete libre de enviar solicitudes de extracción o informar problemas en el repositorio de GitHub: https://github.com/itsbeensolong/api-brawl-stars
 
 ## Licencia
