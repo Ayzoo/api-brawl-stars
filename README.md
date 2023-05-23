@@ -16,33 +16,29 @@ The Brawl Star API is a RESTful API based on the supercell video game Brawl Star
 
 ### Endpoints
 
-- `GET /users`: .
-- `GET /users/:id`: .
-- `POST /users`: .
-- `PUT /users/:id`: .
-- `DELETE /users/:id`: .
+- `GET /api/`: .
+- `GET /api/:id`: .
+- `POST /api`: .
+- `PUT /api/:id`: .
+- `DELETE /api/:id`: .
 
 ## Use
 
-Asegúrate de haber iniciado el servidor antes de realizar cualquier solicitud a la API. La API estará disponible en `http://localhost:3000`.
+Make sure you have started the server before making any requests to the API. The API will be available in 'http://localhost:3000'.
 
 ## Errors
-La API puede devolver los siguientes códigos de estado y mensajes de error:
+The API may return the following status codes and error messages:
 
-400 Bad Request: La solicitud es inválida.
+404 Not Found: The requested resource was not found.
 <br>
-401 Unauthorized: No se proporcionó o es inválido el token de acceso.
-<br>
-404 Not Found: No se encontró el recurso solicitado.
-<br>
-500 Internal Server Error: Error interno del servidor.
+500 Internal Server Error: Error Server.
 
 ## Contribution
 
-Si deseas contribuir a esta API, siéntete libre de enviar solicitudes de extracción o informar problemas en el repositorio de GitHub: https://github.com/itsbeensolong/api-brawl-stars
+If you'd like to contribute to this API, feel free to submit pull requests or report issues in the GitHub repository: https://github.com/itsbeensolong/api-brawl-stars
 
 ## License
-Este proyecto está licenciado bajo la Licencia MIT.
+This project is licensed under the MIT License.
 
 ## Contact
-Para consultas o más información, puedes comunicarte conmigo en johancs.mm@gmail.com
+For inquiries or more information, you can contact me at johancs.mm@gmail.com
