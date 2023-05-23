@@ -1,0 +1,12 @@
+{
+  "name": "The Brawl Stars API",
+  "description": "The Brawl Star API is a RESTful API based on the supercell video game Brawl Stars. You will access data about characters, images.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "images": "",
+  "contact": {
+    "github": "github.com/itsbeensolong/api-brawl-star",
+    "twitter": "twitter.com/castrogarciajs"
+  },
+  "url": {}
+}

@@ -1,7 +1,16 @@
 package main
 
-import "fmt"
+import (
+	"github.com/gofiber/fiber/v2"
+)
 
 func main() {
-	fmt.Println("Api Brawl Star")
+
+	app := fiber.New()
+
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.SendString("Api Brawl Stars")
+	})
+
+	app.Listen(":8080")
 }
