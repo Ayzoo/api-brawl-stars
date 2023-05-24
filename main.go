@@ -5,7 +5,7 @@ import (
 	"log"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/itsbeensolong/api-brawl-stars/pkg/services"
+	"github.com/itsbeensolong/api-brawl-stars/services"
 )
 
 var (
