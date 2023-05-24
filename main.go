@@ -1,39 +1,31 @@
 package main
 
 import (
-	"encoding/json"
-	"os"
+	"flag"
+	"log"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/itsbeensolong/api-brawl-stars/pkg/services"
+)
+
+var (
+	PORT = flag.String("port", ":3000", "Port to Listen On")
+	PROD = flag.Bool("prod", false, "Enable prefork in production")
 )
 
 func main() {
-
-	app := fiber.New()
-
-	app.Get("/", func(c *fiber.Ctx) error {
-		data, err := os.ReadFile("main.json")
-
-		if err != nil {
-			return err
-		}
-
-		var jsonData interface{}
-
-		err = json.Unmarshal(data, &jsonData)
-
-		if err != nil {
-			return err
-		}
-
-		res, err := json.Marshal(jsonData)
-
-		if err != nil {
-			return err
-		}
-
-		return c.Send(res)
+	flag.Parse()
+	app := fiber.New(fiber.Config{
+		Prefork: *PROD,
 	})
 
-	app.Listen(":8080")
+	v1 := app.Group("/api/v1")
+
+	app.Get("/", services.App)
+
+	v1.Get("brawlers", func(c *fiber.Ctx) error {
+		return c.SendString("brawlers")
+	})
+
+	log.Fatal(app.Listen(*PORT))
 }
