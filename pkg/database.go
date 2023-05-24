@@ -8,14 +8,27 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-func MySQL() (db *sql.DB, e error) {
-	value := os.Getenv("USER_DATABASE")
+type Username struct {
+	User     string
+	Password string
+	Database string
+}
 
-	db, err := sql.Open("mysql", "root:sebastian123_*@/bralwstars")
+func MySQL() (db *sql.DB, e error) {
+
+	username := Username{
+		User:     os.Getenv("USER_DATABASE"),
+		Password: os.Getenv("PASSWORD_DATABASE"),
+		Database: os.Getenv("NAME_DATABASE"),
+	}
+
+	conn := fmt.Sprintf("%s:%s@/%s", username.User, username.Password, username.Database)
+
+	db, err := sql.Open("mysql", conn)
 
 	if err != nil {
 		panic(err.Error())
 	}
-	fmt.Println(value)
+
 	return db, nil
 }
