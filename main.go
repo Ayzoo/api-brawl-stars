@@ -1,7 +1,14 @@
 package main
 
-import "github.com/itsbeensolong/api-brawl-stars/pkg/utils"
+import (
+	"github.com/gofiber/fiber/v2"
+	"github.com/itsbeensolong/api-brawl-stars/pkg/services"
+)
 
 func main() {
-	utils.Server(3000)
+	app := fiber.New()
+
+	app.Get("/", services.App)
+
+	app.Listen(":3000")
 }
