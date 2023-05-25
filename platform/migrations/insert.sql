@@ -7,3 +7,6 @@ VALUES (1, 'CHOQUE MATE', 'PRIMEROS AUXILIOS');
 
 INSERT INTO super (brawler_id, name, description, damage, scope)
 VALUES (1, '', '', '', '');
+
+INSERT INTO brawlers () 
+VALUES ()
