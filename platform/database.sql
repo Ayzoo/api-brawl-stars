@@ -5,7 +5,10 @@ CREATE TABLE brawlers(
     name VARCHAR(255),
     image VARCHAR(255),
     type VARCHAR(255),
-    category VARCHAR(255)
+    category VARCHAR(255),
+    stellar INT,
+    gadget INT,
+    super INT
 );
 
 CREATE TABLE brawlers_stellar(
