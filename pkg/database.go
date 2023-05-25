@@ -6,17 +6,12 @@ import (
 	"os"
 
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/itsbeensolong/api-brawl-stars/utils"
 )
-
-type Username struct {
-	User     string
-	Password string
-	Database string
-}
 
 func MySQL() (db *sql.DB, e error) {
 
-	username := Username{
+	username := utils.Username{
 		User:     os.Getenv("USER_DATABASE"),
 		Password: os.Getenv("PASSWORD_DATABASE"),
 		Database: os.Getenv("NAME_DATABASE"),

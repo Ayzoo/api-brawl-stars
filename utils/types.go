@@ -1,5 +1,11 @@
 package utils
 
+type Username struct {
+	User     string
+	Password string
+	Database string
+}
+
 type Super struct {
 	Name        string
 	Description string
