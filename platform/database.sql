@@ -24,3 +24,14 @@ CREATE TABLE brawlers_gadget(
     second_gadget VARCHAR(255),
     FOREIGN KEY (brawler_id) REFERENCES brawlers(id)
 );
+
+
+CREATE TABLE super(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    brawler_id INT,
+    name VARCHAR(255),
+    description VARCHAR(255),
+    damage VARCHAR(255),
+    scope VARCHAR(255)
+    FOREIGN KEY (brawler_id) REFERENCES brawlers(id)
+);
