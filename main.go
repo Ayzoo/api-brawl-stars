@@ -27,9 +27,7 @@ func main() {
 
 	app.Get("/", services.App)
 
-	v1.Get("/brawlers", func(c *fiber.Ctx) error {
-		return c.SendString("brawlers")
-	})
+	v1.Get("/brawlers", services.Brawlers)
 
 	log.Fatal(app.Listen(*PORT))
 }
