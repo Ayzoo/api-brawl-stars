@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>{{.Title}}</title>
   </head>
   <body>
@@ -20,8 +27,8 @@
           <div class="field is-grouped">
             <p class="control">
               <a
-                href=""
-                class="bd-tw-button button"
+                href="https://twitter.com/castrogarciajs"
+                class="bd-tw-button button is-primary"
                 data-social-network="Twitter"
               >
                 <span class="icon">
@@ -34,5 +41,22 @@
         </div>
       </div>
     </nav>
+    <main
+      class="container is-heightfull is-flex is-justify-content-center is-align-items-center"
+      role="main"
+      style="height: 100vh"
+    >
+      <form>
+        <div class="field">
+          <label for="name" class="label"> Name Brawler </label>
+          <div class="control">
+            <input type="text" class="input" placeholder="name brawler" />
+          </div>
+        </div>
+        <div class="control">
+          <button class="button is-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>
