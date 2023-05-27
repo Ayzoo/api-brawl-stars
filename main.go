@@ -28,6 +28,7 @@ func main() {
 	app.Get("/", services.App)
 
 	v1.Get("/brawlers", services.Brawlers)
+	v1.Get("/admin", services.Admin)
 
 	log.Fatal(app.Listen(*PORT))
 }
