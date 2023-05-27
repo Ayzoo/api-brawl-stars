@@ -2,8 +2,6 @@ package utils
 
 import (
 	"text/template"
-
-	core "github.com/gofiber/template"
 )
 
 type Username struct {
@@ -13,7 +11,5 @@ type Username struct {
 }
 
 type Engine struct {
-	core.Engine
-
 	Templates *template.Template
 }

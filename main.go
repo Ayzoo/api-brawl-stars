@@ -21,6 +21,7 @@ func main() {
 
 	app := fiber.New(fiber.Config{
 		Prefork: *PROD,
+		Views:   services.Engine,
 	})
 
 	v1 := app.Group("/api/v1")

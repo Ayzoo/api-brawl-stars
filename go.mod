@@ -6,6 +6,8 @@ require github.com/gofiber/fiber/v2 v2.46.0
 
 require github.com/joho/godotenv v1.5.1
 
+require github.com/gofiber/template v1.8.1 // indirect
+
 require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/go-sql-driver/mysql v1.7.1
