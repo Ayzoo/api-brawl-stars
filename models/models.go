@@ -7,6 +7,7 @@ type Super struct {
 	Scope       string
 }
 type Brawler struct {
+	Id       int
 	Name     string
 	Image    string
 	Type     string

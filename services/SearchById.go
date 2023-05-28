@@ -42,6 +42,7 @@ func SearchById(c *fiber.Ctx) error {
 		panic(err.Error())
 	}
 
+	brawler.Id = id
 	brawler.Name = name
 	brawler.Image = image
 	brawler.Type = types

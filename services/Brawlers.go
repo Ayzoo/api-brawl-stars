@@ -39,7 +39,7 @@ func Brawlers(c *fiber.Ctx) error {
 		if err != nil {
 			panic(err.Error())
 		}
-
+		brawler.Id = id
 		brawler.Name = name
 		brawler.Image = image
 		brawler.Type = types
