@@ -42,10 +42,11 @@
       </div>
     </nav>
     <main
-      class="container is-heightfull is-flex is-justify-content-center is-align-items-center"
+      class="container is-heightfull is-flex is-justify-content-center is-align-items-center is-flex-direction-column"
       role="main"
       style="height: 100vh"
     >
+      <h2 class="subtitle">Welcome {{ .License }}</h2>
       <form>
         <div class="field">
           <label for="name" class="label"> Name Brawler </label>
@@ -53,6 +54,14 @@
             <input type="text" class="input" placeholder="name brawler" />
           </div>
         </div>
+
+        <div class="field">
+          <label for="image" class="label">Image Brawler</label>
+          <div class="control">
+            <input type="file" class="input" />
+          </div>
+        </div>
+
         <div class="control">
           <button class="button is-primary" type="submit">Enviar</button>
         </div>
