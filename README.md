@@ -1,7 +1,7 @@
 # The Brawl Stars API
 
 The Brawl Star API is a RESTful API based on the supercell video game Brawl Stars. You will access data about characters, images.
-
+<!--// Bandaancha09-->
 ## Prerequisites
 
 - Go (v1.17 o superior)
